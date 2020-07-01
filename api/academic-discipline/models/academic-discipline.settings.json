@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academic_disciplines",
+  "info": {
+    "name": "Academic Discipline"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

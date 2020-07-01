@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marks_constraints",
+  "info": {
+    "name": "Marks Constraints"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "minValue": {
+      "type": "integer",
+      "default": 0
+    },
+    "maxValue": {
+      "type": "integer",
+      "default": 10,
+      "min": 1
+    },
+    "satisfactory": {
+      "type": "integer",
+      "min": 1
+    },
+    "good": {
+      "type": "integer",
+      "min": 1
+    },
+    "excellent": {
+      "type": "integer",
+      "min": 1
+    },
+    "name": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

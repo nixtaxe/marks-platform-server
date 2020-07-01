@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "semester_marks",
+  "info": {
+    "name": "Semester Mark"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "percentage": {
+      "type": "decimal"
+    },
+    "student": {
+      "model": "student",
+      "via": "semester_marks"
+    },
+    "semester_discipline": {
+      "via": "semester_marks",
+      "model": "semester-discipline"
+    }
+  }
+}

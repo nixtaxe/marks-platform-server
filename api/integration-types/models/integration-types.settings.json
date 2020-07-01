@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "integration_types",
+  "info": {
+    "name": "Integration Types"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "integer"
+    }
+  }
+}

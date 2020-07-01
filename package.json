@@ -1,0 +1,42 @@
+{
+  "name": "fefu-elearning-platform-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "setup": "strapi install",
+    "unsetup": "strapi uninstall"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "googleapis": "^52.1.0",
+    "knex": "^0.21.1",
+    "pg": "^8.2.1",
+    "puppeteer": "^4.0.0",
+    "strapi": "3.0.4",
+    "strapi-admin": "3.0.4",
+    "strapi-connector-bookshelf": "3.0.4",
+    "strapi-plugin-content-manager": "3.0.4",
+    "strapi-plugin-content-type-builder": "3.0.4",
+    "strapi-plugin-email": "3.0.4",
+    "strapi-plugin-graphql": "^3.0.4",
+    "strapi-plugin-upload": "3.0.4",
+    "strapi-plugin-users-permissions": "3.0.4",
+    "strapi-utils": "3.0.4"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "9c416840-e9c1-4424-a934-d7ea79607b98"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

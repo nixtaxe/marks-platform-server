@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/teacher-discipline-student-groups",
+      "handler": "teacher-discipline-student-group.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacher-discipline-student-groups/count",
+      "handler": "teacher-discipline-student-group.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacher-discipline-student-groups/:id",
+      "handler": "teacher-discipline-student-group.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/teacher-discipline-student-groups",
+      "handler": "teacher-discipline-student-group.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/teacher-discipline-student-groups/:id",
+      "handler": "teacher-discipline-student-group.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/teacher-discipline-student-groups/:id",
+      "handler": "teacher-discipline-student-group.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

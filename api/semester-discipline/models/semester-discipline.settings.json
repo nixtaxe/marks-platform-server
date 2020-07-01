@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "semester_disciplines",
+  "info": {
+    "name": "Semester Discipline"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "teacher_discipline_student_group": {
+      "model": "teacher-discipline-student-group",
+      "via": "semester_disciplines"
+    },
+    "semesterDates": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dates.semester-dates"
+    },
+    "assignment_groups": {
+      "via": "semester_discipline",
+      "collection": "assignment-group"
+    },
+    "semester_marks": {
+      "collection": "semester-mark",
+      "via": "semester_discipline"
+    },
+    "marks_constraint": {
+      "model": "marks-constraints"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/academic-disciplines",
+      "handler": "academic-discipline.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/academic-disciplines/count",
+      "handler": "academic-discipline.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/academic-disciplines/:id",
+      "handler": "academic-discipline.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/academic-disciplines",
+      "handler": "academic-discipline.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/academic-disciplines/:id",
+      "handler": "academic-discipline.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/academic-disciplines/:id",
+      "handler": "academic-discipline.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

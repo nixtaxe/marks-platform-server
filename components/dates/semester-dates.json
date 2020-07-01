@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dates_semester_dates",
+  "info": {
+    "name": "Semester Dates",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "startDate": {
+      "type": "date"
+    },
+    "finalsStartDate": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teacher_discipline_student_groups",
+  "info": {
+    "name": "Teacher Discipline StudentGroup"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "teacher": {
+      "model": "teacher"
+    },
+    "academic_discipline": {
+      "model": "academic-discipline"
+    },
+    "student_group": {
+      "model": "student-group"
+    },
+    "semester_disciplines": {
+      "via": "teacher_discipline_student_group",
+      "collection": "semester-discipline"
+    }
+  }
+}

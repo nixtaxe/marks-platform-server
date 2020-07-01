@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_groups",
+  "info": {
+    "name": "Student Group"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "educational_programme": {
+      "model": "educational-programme",
+      "via": "student_groups"
+    },
+    "students": {
+      "via": "student_group",
+      "collection": "student"
+    }
+  }
+}

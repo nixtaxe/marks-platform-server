@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "Student"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "student_group": {
+      "model": "student-group",
+      "via": "students"
+    },
+    "marks": {
+      "collection": "mark",
+      "via": "student"
+    },
+    "semester_marks": {
+      "via": "student",
+      "collection": "semester-mark"
+    }
+  }
+}

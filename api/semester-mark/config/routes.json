@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/semester-marks",
+      "handler": "semester-mark.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/semester-marks/count",
+      "handler": "semester-mark.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/semester-marks/:id",
+      "handler": "semester-mark.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/semester-marks",
+      "handler": "semester-mark.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/semester-marks/:id",
+      "handler": "semester-mark.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/semester-marks/:id",
+      "handler": "semester-mark.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

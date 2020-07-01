@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/semester-disciplines",
+      "handler": "semester-discipline.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/semester-disciplines/count",
+      "handler": "semester-discipline.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/semester-disciplines/:id",
+      "handler": "semester-discipline.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/semester-disciplines",
+      "handler": "semester-discipline.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/semester-disciplines/:id",
+      "handler": "semester-discipline.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/semester-disciplines/:id",
+      "handler": "semester-discipline.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

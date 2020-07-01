@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assignment_groups",
+  "info": {
+    "name": "Assignment Group"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "assignments": {
+      "collection": "assignment",
+      "via": "assignment_group"
+    },
+    "parent_group": {
+      "model": "assignment-group",
+      "via": "child_groups"
+    },
+    "child_groups": {
+      "collection": "assignment-group",
+      "via": "parent_group"
+    },
+    "semester_discipline": {
+      "model": "semester-discipline",
+      "via": "assignment_groups"
+    },
+    "percentage": {
+      "type": "decimal",
+      "min": 0,
+      "max": 100
+    },
+    "default_marks_constraint": {
+      "model": "marks-constraints"
+    },
+    "integration_type": {
+      "model": "integration-types"
+    },
+    "integrationUrl": {
+      "type": "string"
+    },
+    "upperLeftCell": {
+      "type": "string"
+    },
+    "lowerRightCell": {
+      "type": "string"
+    },
+    "sheetName": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/educational-programmes",
+      "handler": "educational-programme.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/educational-programmes/count",
+      "handler": "educational-programme.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/educational-programmes/:id",
+      "handler": "educational-programme.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/educational-programmes",
+      "handler": "educational-programme.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/educational-programmes/:id",
+      "handler": "educational-programme.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/educational-programmes/:id",
+      "handler": "educational-programme.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

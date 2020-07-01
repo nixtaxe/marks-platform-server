@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marks",
+  "info": {
+    "name": "Mark"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "value": {
+      "type": "decimal"
+    },
+    "assignment": {
+      "via": "marks",
+      "model": "assignment"
+    },
+    "student": {
+      "via": "marks",
+      "model": "student"
+    }
+  }
+}

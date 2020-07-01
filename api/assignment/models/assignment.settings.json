@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assignments",
+  "info": {
+    "name": "Assignment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "deadlineDate": {
+      "type": "date"
+    },
+    "marks": {
+      "collection": "mark",
+      "via": "assignment"
+    },
+    "assignment_group": {
+      "via": "assignments",
+      "model": "assignment-group"
+    },
+    "marks_constraint": {
+      "model": "marks-constraints"
+    }
+  }
+}

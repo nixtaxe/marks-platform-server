@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educational_programmes",
+  "info": {
+    "name": "Educational Programme"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "degree": {
+      "type": "enumeration",
+      "enum": [
+        "bachelor",
+        "master",
+        "specialist"
+      ],
+      "default": "bachelor",
+      "required": true
+    },
+    "student_groups": {
+      "via": "educational_programme",
+      "collection": "student-group"
+    }
+  }
+}

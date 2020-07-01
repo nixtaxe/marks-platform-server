@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/student-groups",
+      "handler": "student-group.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/student-groups/count",
+      "handler": "student-group.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/student-groups/:id",
+      "handler": "student-group.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/student-groups",
+      "handler": "student-group.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/student-groups/:id",
+      "handler": "student-group.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/student-groups/:id",
+      "handler": "student-group.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

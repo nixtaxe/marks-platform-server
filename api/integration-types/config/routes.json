@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/integration-types",
+      "handler": "integration-types.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/integration-types/count",
+      "handler": "integration-types.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/integration-types/:id",
+      "handler": "integration-types.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/integration-types",
+      "handler": "integration-types.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/integration-types/:id",
+      "handler": "integration-types.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/integration-types/:id",
+      "handler": "integration-types.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/marks-constraints",
+      "handler": "marks-constraints.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/marks-constraints/count",
+      "handler": "marks-constraints.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/marks-constraints/:id",
+      "handler": "marks-constraints.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/marks-constraints",
+      "handler": "marks-constraints.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/marks-constraints/:id",
+      "handler": "marks-constraints.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/marks-constraints/:id",
+      "handler": "marks-constraints.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

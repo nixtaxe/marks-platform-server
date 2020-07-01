@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/assignment-groups",
+      "handler": "assignment-group.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/assignment-groups/count",
+      "handler": "assignment-group.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/assignment-groups/:id",
+      "handler": "assignment-group.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/assignment-groups/refresh/:id",
+      "handler": "assignment-group.refresh",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/assignment-groups",
+      "handler": "assignment-group.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/assignment-groups/:id",
+      "handler": "assignment-group.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/assignment-groups/:id",
+      "handler": "assignment-group.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
